@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2주차 REACT 과제 강수현</title>
+
+<style>
+  .sign_up > ul {
+    list-style-type: none;
+  }
+</style>
+
+<script>
+  function submitForm() {
+    alert('제출 완료!')
+  }
+</script>
+
+</head>
+
+<body>
+  <form class="sign_up">
+    <ul>
+    <li><label>First name : <br> <input type="text" required> </label></li>
+    <li><label>Last name : <br> <input type="text" required> </label></li>
+    <li><label>Email : <br> <input type="email" required> </label></li>
+    <li><label>Gender : 
+      <label><input type="radio" name="Gender" value="Male" required>Male</label>
+      <label><input type="radio" name="Gender" value="Female"required>Female</label> </label></li>
+    <li><label>Favorite : 
+      <label><input type="checkbox" name="favorite" value="HTML"> HTML</label>
+      <label><input type="checkbox" name="favorite" value="JAVA"> JAVA</label>
+      <label><input type="checkbox" name="favorite" value="JavaScript"> JavaScript</label> </label></li>
+    <li><label>Browser : 
+      <select>
+        <option value="chrome">크롬</option>
+        <option value="safari">사파리</option>
+        <option value="edge">엣지</option> </select> </label></li>
+    <li><label>Birthday : <input type="date"> </label></li>
+    <li><input type="submit" onclick="submitForm()"></li>
+    </ul>
+  </form>
+</body>
+</html>
