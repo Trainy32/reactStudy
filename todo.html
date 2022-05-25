@@ -42,7 +42,7 @@
     <div class="todo-card">
       <h3>고양이 밥 주기</h3>
       <p>고양이 물, 사료 챙겨주기</p>
-      <button>완료</button>
+      <button onclick="changeBackgroundColor(0)">완료</button>
     </div>
 
     <div class="todo-card">
@@ -71,6 +71,11 @@
       console.log('hello')
     }
 
+    function changeBackgroundColor(index) {
+      let card = document.getElementsByClassName("todo-card")[index]
+      card.style.backgroundColor = 'grey';
+    }
+
     const wraps = document.getElementsByClassName("wrap");
     console.log(wraps);
 
@@ -85,6 +90,12 @@
     for (let i=0; i<buttons.length; i++) {
       buttons[i].addEventListener('click', sayHello)
     }
+
+    const new_div = document.createElement("div")
+    new_div.style.backgroundColor='green'
+    new_div.style.height='100px'
+    new_div.style.width='100px'
+    document.body.appendChild(new_div);
 
   </script>
 
