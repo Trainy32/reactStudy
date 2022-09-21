@@ -1,0 +1,9 @@
+{
+  "mytil_list": [
+    {
+      "subject": "React", 
+      "text": "오늘은 웹팩과 바벨 가지고 프로젝트를 세팅해봤다!", 
+      "studyTime": 80
+    }
+  ]
+}
